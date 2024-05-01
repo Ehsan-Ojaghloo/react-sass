@@ -1,0 +1,113 @@
+@use "./colors" as *;
+
+.app-con {
+    font-family: sans-serif;
+
+    .nav-con {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        // background-color: red;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            // background-color: green;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+                font-size: 1rem;
+                list-style: none;
+            }
+
+            .site-icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                h2 {
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            button {
+                padding: 15px;
+                width: 130px;
+                background-color: $orange;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                cursor: pointer;
+            }
+
+        }
+
+        //nav-con end
+    }
+
+    .hero-con {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .hero-inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .hero-title {
+                
+                h1 {
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 3rem;
+                    width: 670px;
+
+                    span {
+                        color: $orange;
+                    }
+
+                }
+
+                button {
+                    padding: 16px;
+                    width: 150px;
+                    font-size: 1rem;
+                    border: none;
+                    background-color: $orange;
+                    color: white;
+                    border-radius: 8px;
+                    cursor: pointer;
+                }
+
+            }
+
+            img {
+                width: 750px;
+                height: 550px;
+            }
+            
+        }
+
+        //hero-con end
+    }
+
+    //app-con end
+}
